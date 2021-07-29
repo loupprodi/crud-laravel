@@ -15,13 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get(
     '/',
-    "HomeController@index"
+    "CustomersController@cadastrar"
 );
+
 Route::get(
     '/editar',
-    "HomeController@contact"
+    "CustomersController@editar"
 );
+
 Route::get(
     '/listar',
-    "HomeController@listar"
+    "CustomersController@listar"
+);
+Route::get(
+    '/visualizar',
+    "CustomersController@visualizar"
 );
